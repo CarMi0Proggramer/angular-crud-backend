@@ -5,7 +5,7 @@ import { AppDataSource } from "./data-source";
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
     app.enableCors({
-        origin: "https://angular-crud-4gtr.onrender.com",
+        origin: "https://angular-crud-blush.vercel.app",
     });
     await app.listen(process.env.PORT ?? 3000);
 
