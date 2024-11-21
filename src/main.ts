@@ -5,7 +5,7 @@ import { AppDataSource } from "./data-source";
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
     app.enableCors({
-        origin: "http://localhost:4200",
+        origin: "https://angular-crud.onrender.com",
     });
     await app.listen(process.env.PORT ?? 3000);
 
